@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Resume</title>
-    <style>
+    <link rel="stylesheet" href="style.css">
+    <style>      
+      #a4 {
+        background-color: white;
+        color: black;
+        height: 842px;
+        width: 595px;
+        padding: 10px;
+      }
+      .custom{
+        padding: 10px 25px;
+      }
       header {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: start;
         gap: 10px;
       }
       img {
@@ -18,43 +29,45 @@
     </style>
   </head>
   <body>
-    <header>
-      <img src="assets/img/profile.png" />
-      <div>
-        <h3>Krysanne Guinmods</h3>
-        <h4>Software Developer</h4>
-      </div>
-    </header>
-    <hr />
-    <main>
-      <table>
-        <tr>
-          <td>
-            <h3>Skills</h3>
-            <ul>
-              <li>Frontend</li>
-              <li>Backend</li>
-              <li>End to End</li>
-              <li>Never end</li>
-              <li>Ended</li>
-              <li>End Core</li>
-            </ul>
-            <p>I want to be a millionaire by sleeping only.</p>
-          </td>
-          <td>
-            <h3>Educational Background</h3>
-            <ul>
-              <li>College: DLL</li>
-              <li>SHS: AMA</li>
-              <li>Highschool: C 1.0 NHS</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </main>
-    <hr />
-    <footer>
-      <p>Developed by Krysanne Guinmods</p>
-    </footer>
+    <div id="a4">
+      <header class="custom">
+        <img src="assets/img/profile.png" />
+        <div style="padding-top: 25px;">
+          <h3>Krysanne Guinmods</h3>
+          <h4>Software Developer</h4>
+        </div>
+      </header>
+      <hr />
+      <main class="custom">
+        <table>
+          <tr valign="top">
+            <td>
+              <h3>Skills</h3>
+              <ul>
+                <li>Frontend</li>
+                <li>Backend</li>
+                <li>End to End</li>
+                <li>Never end</li>
+                <li>Ended</li>
+                <li>End Core</li>
+              </ul>
+              <p>I want to be a millionaire by sleeping only.</p>
+            </td>
+            <td>
+              <h3>Educational Background</h3>
+              <ul>
+                <li>College: DLL</li>
+                <li>SHS: AMA</li>
+                <li>Highschool: C 1.0 NHS</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </main>
+      <hr />
+      <footer class="custom">
+        <p>Developed by Krysanne Guinmods</p>
+      </footer>
+    </div>
   </body>
 </html>
